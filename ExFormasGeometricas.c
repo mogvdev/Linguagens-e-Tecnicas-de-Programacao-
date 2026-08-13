@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 	scanf("%f", &altura);
 	
 	area = ((base1 + base2) * altura) /2;
-	printf("A Area é igual a: %f", area);
+	printf("A Area Ã© igual a: %f", area);
 	
 	return 0;
 }
