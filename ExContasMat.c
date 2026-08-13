@@ -11,7 +11,7 @@ int main(int arg, char *argv[]) {
  	e = a/b;
  	f = a*b;
 	
-	printf("As operações de %d %d são: %d %d %d %d", a,b,c,d,e,f);
+	printf("As operaÃ§Ãµes de %d %d sÃ£o: %d %d %d %d", a,b,c,d,e,f);
 	
 	
 	return 0;
