@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &n);
 	
 	resto1 = n % 2;
-	 n = n / 2;
+	n = n / 2;
 	
 	resto2 = n % 2;
 	n = n / 2;
