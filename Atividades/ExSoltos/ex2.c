@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-    int a1, r1, r2, r3, r4, r5, r6, b2, area, hip, total, inv1, inv2;
+    int a1, r1, r2, r3, r4, r5, r6, b2, area, hip, inv1, inv2;
     printf("Digite seu primeiro numero: ");
     scanf("%d", &a1);
     
