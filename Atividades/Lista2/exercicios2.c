@@ -38,6 +38,18 @@ void ex8(){
     
 }
 
+void ex10(){
+	int a,b,c,d, maior, maior_temp, maior2;
+	printf("Informe os valores a serem comparados: ");
+	scanf("%d %d %d %d", &a,&b,&c,&d);
+	//conta
+	maior_temp = (a+b+abs(a-b))/2;
+	maior2 = (d+c+abs(d-c))/2;
+	maior = (maior2+maior_temp+abs(maior2-maior_temp))/2;
+	printf("O maior entre |%d|%d|%d|%d| = %d", a,b,c,d, maior);
+}
+
+
 int main (int arc, char *argv[]){
 	int op;
 	printf("Insira qual exercício quer resolver [1|2|3|8]\n");
@@ -62,6 +74,12 @@ int main (int arc, char *argv[]){
     	case 8:
     	ex8();
     	break;
+
+	//Exercício 10
+		case 10:
+		ex10();
+		break;
+			
     
     return 0;
     }
