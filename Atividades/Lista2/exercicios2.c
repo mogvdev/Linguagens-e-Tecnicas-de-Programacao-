@@ -52,7 +52,7 @@ void ex10(){
 
 int main (int arc, char *argv[]){
 	int op;
-	printf("Insira qual exercício quer resolver [1|2|3|8]\n");
+	printf("Insira qual exercício quer resolver [1|2|3|8|10]\n");
 	scanf("%d", &op);
     switch(op){
     //Exercício 1
