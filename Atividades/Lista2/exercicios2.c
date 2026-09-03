@@ -30,7 +30,7 @@ void ex8(){
 int main (int arc, char *argv[]){
 	int op;
 	printf("Insira qual exercício quer resolver [2|3|8]\n");
-	scanf("&d", &op);
+	scanf("%d", &op);
     //Exercício 2
     switch(op){
     case 2:
