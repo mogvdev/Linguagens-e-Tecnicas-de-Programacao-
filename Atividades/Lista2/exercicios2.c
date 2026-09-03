@@ -9,9 +9,18 @@ void ex1(){
 	scanf("%d", &ano);
 	ano = ano - idade;
 	printf("Voce nasceu no ano: %d", ano);
+
 }
 
 void ex2(){
+	float km, ms;
+	printf("Digite a velocidade em Km/h: ");
+	scanf("%f", &km);
+	ms = km/3.6;
+	printf("A velocidade em %.2f Km/h em %.2f M/s", km,ms);
+}
+
+void ex3(){
 	float reais, cota;
 	printf("Insira a cotação e o valor: \n");
 	scanf("%f %f", &cota, &reais);
@@ -19,7 +28,7 @@ void ex2(){
 	printf("Os %f reais sao %f trumps \n", reais, cota);
 }
 
-void ex3(){
+void ex4(){
 	float tempC, tempF;
 	printf("Insira a temperatura em C: \n");
 	scanf("%f", &tempC);
@@ -52,7 +61,7 @@ void ex10(){
 
 int main (int arc, char *argv[]){
 	int op;
-	printf("Insira qual exercício quer resolver [1|2|3|8|10]\n");
+	printf("Insira qual exercício quer resolver [1|2|3|4|8|10]\n");
 	scanf("%d", &op);
     switch(op){
     //Exercício 1
@@ -69,7 +78,12 @@ int main (int arc, char *argv[]){
     	case 3:
     	ex3();
     	break;
-    
+		
+    //Exercício 4
+		case 4:
+		ex4();
+		break;
+		
     //Exercício 8
     	case 8:
     	ex8();
