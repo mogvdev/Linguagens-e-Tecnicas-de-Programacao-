@@ -5,6 +5,7 @@ void ex2(){
 	float reais, cota;
 	printf("Insira a cotação e o valor: \n");
 	scanf("%f %f", &cota, &reais);
+	cota = reais / cota;
 	printf("Os %f reais sao %f trumps \n", reais, cota);
 }
 
