@@ -36,6 +36,17 @@ void ex4(){
 	printf("Os %f C sao %f \n", tempC, tempF);
 }
 
+void ex6(){
+	float num, ant, suc;
+	printf("Digite seu número escolhido: ");
+	scanf("%f", &num);
+	ant = num - 1;
+	suc = num + 1;
+	printf("O antecessor do seu número é: %.2f e o sucessor dele é: %.2f ", ant, suc);
+	
+}
+
+
 void ex8(){
 	int sec, horas, min;
 	printf("Insira o tempo em segundo \n");
@@ -82,6 +93,11 @@ int main (int arc, char *argv[]){
     //Exercício 4
 		case 4:
 		ex4();
+		break;
+
+	//Exercício 6
+		case 6:
+		esx6();
 		break;
 		
     //Exercício 8
