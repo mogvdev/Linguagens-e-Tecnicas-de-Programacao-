@@ -46,6 +46,15 @@ void ex6(){
 	
 }
 
+void ex7(){
+	float valor, prim, seg, terc, total;
+	valor = 780.000,00;
+	prim = valor * 0.42;
+	seg = valor * 0.32;
+	terc = valor - prim - seg;
+	printf("O valor de R$ 780.000,00 será dividido entre os vencedores\n o primeiro lugar levando: %.2f\n o segundo: %.2f\n e o terceiro: %.2f!\n", prim, seg, terc);
+}
+
 
 void ex8(){
 	int sec, horas, min;
@@ -97,7 +106,12 @@ int main (int arc, char *argv[]){
 
 	//Exercício 6
 		case 6:
-		esx6();
+		ex6();
+		break;
+
+	//Exercício 7
+		case 7:
+		ex7();
 		break;
 		
     //Exercício 8
