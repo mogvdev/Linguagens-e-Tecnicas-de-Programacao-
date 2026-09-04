@@ -67,6 +67,19 @@ void ex8(){
     
 }
 
+void ex9(){
+	float km, horas, vel, dis, l;
+	printf("Quantas horas de viagem?: ");
+	scanf("%f", &horas);
+	printf("Qual foi a velocidade?: ");
+	scanf("%f", &vel);
+	dis = horas * vel;
+	l = dis / 12;
+	printf("Se o veículo faz 12km/l, foram gastos: %.3f litros\n", l);
+	
+}
+
+
 void ex10(){
 	int a,b,c,d, maior, maior_temp, maior2;
 	printf("Informe os valores a serem comparados: ");
@@ -118,6 +131,11 @@ int main (int arc, char *argv[]){
     	case 8:
     	ex8();
     	break;
+
+	//Exercício 9
+		case 9:
+		ex9();
+		break;
 
 	//Exercício 10
 		case 10:
