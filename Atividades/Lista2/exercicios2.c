@@ -36,6 +36,15 @@ void ex4(){
 	printf("Os %f C sao %f \n", tempC, tempF);
 }
 
+void ex5(){
+	float graus, radiano;
+    float p = 3.141592;
+	printf("Digite o angulo em graus: ");
+	scanf("%f", &graus);
+	radiano = graus * p/ 180;
+	printf("Seu grau em radiano é %.2f", radiano);
+}
+
 void ex6(){
 	float num, ant, suc;
 	printf("Digite seu número escolhido: ");
@@ -117,6 +126,11 @@ int main (int arc, char *argv[]){
 		ex4();
 		break;
 
+	//Exercício 5
+		case 5:
+		ex5();
+		break;
+		
 	//Exercício 6
 		case 6:
 		ex6();
