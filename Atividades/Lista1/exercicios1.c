@@ -133,7 +133,22 @@ int main(int argc, char *argv[]) {
 		case 4:
 		ex4();
 		break;
-		
+
+	//Exercício 5
+    	case 5:
+    	ex5();
+    	break;
+
+	//Exercício 6
+    	case 6:
+    	ex6();
+    	break;
+	  
+	//Exercício 7
+    	case 7:
+    	ex7();
+    	break;
+	  
     //Exercício 8
     	case 8:
     	ex8();
