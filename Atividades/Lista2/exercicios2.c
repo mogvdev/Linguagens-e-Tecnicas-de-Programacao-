@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define pi 3.14159
 
 void ex1(){
 	int idade, ano;
@@ -38,10 +39,9 @@ void ex4(){
 
 void ex5(){
 	float graus, radiano;
-    float p = 3.141592;
 	printf("Digite o angulo em graus: ");
 	scanf("%f", &graus);
-	radiano = graus * p/ 180;
+	radiano = graus * pi/ 180;
 	printf("Seu grau em radiano é %.2f", radiano);
 }
 
