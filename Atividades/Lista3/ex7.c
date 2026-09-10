@@ -14,9 +14,8 @@ float calc_irpf (float salario){
   else if (salario<= 4664.68) return (salario*0.225) - 662.77;
   else return (salario*0.275) - 896.00;
 }
-float valor_hora;{
-int vhora, thora, salario;
-  return salario = thora * vhora;
+float calc_hora (float salario, float hora, float valor){
+  return salario = hora * valor;
 }
 
 
@@ -28,7 +27,7 @@ int main(){
   printf("======================================================\n");
   printf("    RECIBO DE PAGAMENTO DE SALÁRIO (CONTRA-CHEQUE)    \n");
   printf("======================================================\n");
-  printf("Salário Bruto (Horas x Valor):   R$%f\n", valor_hora(salario));
+  printf("Salário Bruto (Horas x Valor):   R$%f\n", calc_hora(salario));
   printf(" (-) Desconto INSS:               R$%f\n", calc_inss(salario));
   printf(" (-) Desconto IRPF:               R$%f\n", calc_irpf(salario));
   printf("------------------------------------------------------\n");
