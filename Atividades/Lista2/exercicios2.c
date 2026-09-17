@@ -57,7 +57,7 @@ void ex6(){
 
 void ex7(){
 	float valor, prim, seg, terc, total;
-	valor = 780.000,00;
+	valor = 780000.00;
 	prim = valor * 0.42;
 	seg = valor * 0.32;
 	terc = valor - prim - seg;
