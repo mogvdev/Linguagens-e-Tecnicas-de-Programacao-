@@ -1,1 +1,291 @@
+#include <stdio.h>
+#include <math.h>
 
+void ex1.0(){
+    int n1, n2, n3, n4;
+    printf("Digite 4 numeros inteiros:\n");
+    scanf("%d %d %d %d", &n1, &n2, &n3, &n4);
+    if (n1 % 2 != 0 && n1 % 5 == 0) {
+        printf("%d\n", n1);}
+
+    if (n2 % 2 != 0 && n2 % 5 == 0) {
+        printf("%d\n", n2);}
+
+    if (n3 % 2 != 0 && n3 % 5 == 0) {
+        printf("%d\n", n3);}
+
+    if (n4 % 2 != 0 && n4 % 5 == 0) {
+        printf("%d\n", n4);}
+
+}
+
+void ex1.1(){
+  int itens, moch, quant;
+  printf("Quantos itens são?: ");
+  scanf ("%d", &itens);
+  printf("\nQual a quantidade de itens que a mochila aguenta?: ");
+  scanf ("%d", &moch);
+  quant = itens / moch;
+  printf ("O legendário terá que levar %d mochilas. ", quant);
+
+}
+
+void ex1.2(){
+  int valor, cod, codigo, conver
+  printf("\nQual o valor?: ");
+  scanf("%d", valor);
+  printf("Qual o código da unidade de medida que quer converter?: 1 | 2 | 3 | 4 | 5 | 8 | 9 | 10 | 11\n");
+  scanf("%d", &cod);
+  printf("Para qual unidade de medida quer converter?: 1 | 2 | 3 | 4 | 5 | 8 | 9 | 10 | 11\n");
+  scanf("%d", &codigo);
+
+  if (cod == 1 and codigo == 2){
+    conver = valor * 1.8 + 32;
+    printf("A conversão é: %d", conver);
+
+  if (cod == 2 and codigo == 1){
+    conver = (valor - 32) / 1.8;
+    printf("A conversão é: %d", conver);
+
+  if (cod == 1 and codigo == 3){
+    conver = valor + 273.15;
+    printf("A conversão é: %d", conver);
+
+  if (cod == 3 and codigo == 1){
+    conver = valor - 273.15;
+    printf("A conversão é: %d", conver);
+
+
+  if (cod == 4 and codigo == 5){
+    conver = valor / 1609.34;
+    printf("A conversão é: %d", conver);}
+
+  if (cod == 5 and codigo == 4){
+    conver = valor * 1609.34;
+    printf("A conversão é: %d", conver);}
+
+  if (cod == 8 and codigo == 9){
+    conver = valor * 2.205;
+    printf("A conversão é: %d", conver);}
+
+  if (cod == 9 and codigo == 8){
+    conver = valor / 2.205;
+    printf("A conversão é: %d", conver);}
+
+  if (cod == 11 and codigo == 10){
+    conver = valor / 1.609;
+    printf("A conversão é: %d", conver);}
+
+  if (cod == 10 and codigo == 11){
+    conver = valor * 1.609;
+    printf("A conversão é: %d", conver);}
+
+  else{
+    printf("ERRO!");}
+
+}
+
+void ex2.0(){
+    int capacidade, qtd_itens, n_mochilas, resto;
+    printf("Insira a quantidade de itens a serem dispostos nas mochilas: \n");
+    scanf("%d",&qtd_itens);
+    printf("Insira a capacidade de itens de cada mochila: \n");
+    scanf("%d",&capacidade);
+
+    n_mochilas = qtd_itens/capacidade;
+    resto = qtd_itens%capacidade; 
+    printf("Legendario, são %d mochilas para seus itens, e sobram %d itnes", n_mochilas, resto);}
+
+}
+
+void ex2.1(){
+    int a, b, c;
+    printf("Digite tres numeros: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a == b && a == c && b == c) {
+        printf("Os numeros tem que ser distintos");}
+    else {
+        if (a < b && a < c) {
+            if (b < c) {
+                printf("%d %d %d", a, b, c);}
+            else {
+                printf("%d %d %d", a, c, b);}}
+        else if (b < a && b < c) {
+            if (a < c) {
+                printf("%d %d %d", b, a, c);}
+            else {
+                printf("%d %d %d", b, c, a);}}
+        else {
+            if (a < b) {
+                printf("%d %d %d", c, a, b);}
+            else {
+                printf("%d %d %d", c, b, a);}}
+
+}
+
+void ex2.2(){
+    int valor1, valor2, codigo;
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &valor1);
+    printf("Digite o segundo valor: ");
+    scanf("%d", &valor2);
+    printf("Digite o codigo da operacao: ");
+    scanf("%d", &codigo);
+
+    if (codigo == 1){
+        if (valor1 > valor2) {
+            printf("Verdadeiro");}
+        else {
+            printf("Falso");}}
+
+    else if (codigo == 2){
+        if (valor1 < valor2){
+            printf("Verdadeiro");}
+        else{
+            printf("Falso");}}
+
+    else if (codigo == 3){
+        if (valor1 == valor2){
+            printf("Verdadeiro");}
+        else {
+            printf("Falso");}
+
+    else if (codigo == 4){
+        if (valor1 != valor2){
+            printf("Verdadeiro");}
+        else{
+            printf("Falso");}}
+
+    else{
+        printf("operador invalido");}
+
+}
+
+void ex3.0(){
+    int a, b, c, d, e;
+    printf("Digite 5 numeros: ");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+    if (b == a + 1) {
+        printf("%d %d ", a, b);}
+
+    if (c == b + 1) {
+        printf("%d %d ", b, c);}
+
+    if (d == c + 1) {
+        printf("%d %d ", c, d);}
+
+    if (e == d + 1) {
+        printf("%d %d ", d, e);}
+
+}
+
+void ex3.1(){
+    float peso, altura, imc;
+    printf("Digite seu peso: ");
+    scanf("%f", &peso);
+    printf("Digite sua altura: ");
+    scanf("%f", &altura);
+    imc = peso / (altura * altura);
+    printf("IMC: %.2f\n", imc);
+
+    if (imc < 18.5){
+        printf("Abaixo do peso");}
+
+    else if (imc <= 24.9){
+        printf("Normal");}
+
+    else if (imc <= 29.9){
+        printf("Acima do peso");}
+
+    else{
+        printf("Obeso");}
+
+}
+
+void ex3.2(){
+    int A = 6;
+    int B = 0;
+    int C = 0;
+    printf("Inicio: A = %d, B = %d, C = %d\n", A, B, C);
+    A = A - 1;
+    C = C + 1;
+    printf("A -> C: A = %d, B = %d, C = %d\n", A, B, C);
+    A = A - 2;
+    B = B + 2;
+    printf("A -> B: A = %d, B = %d, C = %d\n", A, B, C);
+    C = C - 1;
+    B = B + 1;
+    printf("C -> B: A = %d, B = %d, C = %d\n", A, B, C);
+    A = A - 3;
+    C = C + 3;
+    printf("A -> C: A = %d, B = %d, C = %d\n", A, B, C);
+    B = B - 1;
+    A = A + 1;
+    printf("B -> A: A = %d, B = %d, C = %d\n", A, B, C);
+    B = B - 2;
+    C = C + 2;
+    printf("B -> C: A = %d, B = %d, C = %d\n", A, B, C);
+    A = A - 1;
+    C = C + 1;
+    printf("A -> C: A = %d, B = %d, C = %d\n", A, B, C);
+
+}
+
+int main(int argc, char *argv[]) {
+  int op;
+  printf("Insira qual prova e qual exercício quer: [1.0|1.1|1.2|2.0|2.1|2.2|3.0|3.1|3.2]\n");
+  scanf("%d", &op);
+  switch(op){
+  //PROVA 1 Exercício 0
+		case 1:
+		ex1.0();
+		break;
+		
+	//PROVA 1 Exercício 1
+		case 2:
+    ex1.1();
+		break;
+    	
+  //PROVA 1 Exercício 2
+    	case 3:
+    	ex3();
+    	break;
+		
+  //PROVA 2 Exercício 0
+		case 4:
+		ex2.0();
+		break;
+
+	//PROVA 2 Exercício 1
+    	case 5:
+    	ex2.1();
+    	break;
+
+	//PROVA 2 Exercício 2
+    	case 6:
+    	ex2.2();
+    	break;
+	  
+	//PROVA 3 Exercício 0
+    	case 7:
+    	ex3.0();
+    	break;
+
+	//PROVA 3 Exercício 1
+    	case 7:
+    	ex3.1();
+    	break;
+	  
+    
+  //PROVA 3 Exercício 2
+    	case 8:
+    	ex3.2();
+    	break;
+    
+
+	return 0;
+  }
+
+}
