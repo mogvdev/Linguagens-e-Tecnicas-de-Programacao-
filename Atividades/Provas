@@ -159,7 +159,6 @@ void ex21(){
                 printf("%d %d %d", c, a, b);
 			}
                 
-        }
             else {
                 printf("%d %d %d", c, b, a);
                 
