@@ -39,9 +39,10 @@ void ex11(){
 }
 
 void ex12(){
-  int valor, cod, codigo, conver;
+  float valor, conver;
+  int cod, codigo;
   printf("\nQual o valor?: ");
-  scanf("%d", valor);
+  scanf("%f", &valor);
   printf("Qual o código da unidade de medida que quer converter?: 1 | 2 | 3 | 4 | 5 | 8 | 9 | 10 | 11\n");
   scanf("%d", &cod);
   printf("Para qual unidade de medida quer converter?: 1 | 2 | 3 | 4 | 5 | 8 | 9 | 10 | 11\n");
@@ -52,53 +53,53 @@ void ex12(){
     printf("A conversão é: %d", conver);
   }
 
-  if (cod == 2 && codigo == 1){
+  else if (cod == 2 && codigo == 1){
     conver = (valor - 32) / 1.8;
     printf("A conversão é: %d", conver);
   }
 
-  if (cod == 1 && codigo == 3){
+  else if (cod == 1 && codigo == 3){
     conver = valor + 273.15;
     printf("A conversão é: %d", conver);
   }
 
-  if (cod == 3 && codigo == 1){
+  else if (cod == 3 && codigo == 1){
     conver = valor - 273.15;
     printf("A conversão é: %d", conver);
   }
 
 
-  if (cod == 4 && codigo == 5){
+  else if (cod == 4 && codigo == 5){
     conver = valor / 1609.34;
     printf("A conversão é: %d", conver);
       
   }
 
-  if (cod == 5 && codigo == 4){
+  else if (cod == 5 && codigo == 4){
     conver = valor * 1609.34;
     printf("A conversão é: %d", conver);
       
   }
 
-  if (cod == 8 && codigo == 9){
+  else if (cod == 8 && codigo == 9){
     conver = valor * 2.205;
     printf("A conversão é: %d", conver);
       
   }
 
-  if (cod == 9 && codigo == 8){
+  else if (cod == 9 && codigo == 8){
     conver = valor / 2.205;
     printf("A conversão é: %d", conver);
       
   }
 
-  if (cod == 11 && codigo == 10){
+  else if (cod == 11 && codigo == 10){
     conver = valor / 1.609;
     printf("A conversão é: %d", conver);
       
   }
 
-  if (cod == 10 && codigo == 11){
+  else if (cod == 10 && codigo == 11){
     conver = valor * 1.609;
     printf("A conversão é: %d", conver);
       
@@ -128,7 +129,8 @@ void ex21(){
     scanf("%d %d %d", &a, &b, &c);
 
     if (a == b && a == c && b == c) {
-        printf("Os numeros tem que ser distintos");}
+        printf("Os numeros tem que ser distintos");
+}
     else {
         if (a < b && a < c) {
             if (b < c) {
@@ -155,8 +157,9 @@ void ex21(){
         else {
             if (a < b) {
                 printf("%d %d %d", c, a, b);
+			}
                 
-            }
+        }
             else {
                 printf("%d %d %d", c, b, a);
                 
