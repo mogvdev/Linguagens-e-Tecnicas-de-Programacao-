@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int main (){
   int valor;
   printf("Insira um valor par: ");
