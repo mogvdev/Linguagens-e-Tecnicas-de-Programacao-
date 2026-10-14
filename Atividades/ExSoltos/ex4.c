@@ -17,7 +17,7 @@ int main(){
     i++;
     }
     else{
-      printf("Digite o número novamente: ");
+      printf("\nDigite o número novamente: ");
     }
   }while(i<10);
 
