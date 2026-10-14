@@ -9,14 +9,15 @@ int main(){
 }
 i= 10;
 while(i<10){
-  scnaf("%d", &valor[i]);
+  scanf("%d", &valor[i]);
   i++;
 }
 i=0;
 do{
   printf("%d", valor[i]);
-  i++
-}while(i<10);
+  i++;
+}
+while(i<10);
 
 return 0;
 }
