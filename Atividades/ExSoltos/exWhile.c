@@ -5,9 +5,13 @@ int main (){
   printf("Insira um valor par: ");
   scanf("%d", &valor);
   while (valor%2 == 1){
-    printf("valor inserido impar, insira um novo valor: ");
+    printf("Valor inserido impar.\nInsira um novo valor: ");
     scanf("%d", &valor);
 }
+  do {
+    printf("\nInsira um valor par: ");
+    scanf("%d", &valor);
+  }while(valor%2 == 1);
   printf("a raiz de %d = %f", valor, sqrt(valor));
   return 0;
 }
