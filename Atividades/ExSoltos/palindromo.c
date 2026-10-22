@@ -20,10 +20,10 @@ int main()
     }
 
     if (pa_lindromo == 1){
-        printf("\nA palavra | %s | é um polindromo", palavra);
+        printf("\nA palavra  %s  é um polindromo", palavra);
     }
     else{
-        printf("\nA palavra | %s | não é um polindromo", palavra);
+        printf("\nA palavra   %s   não é um polindromo", palavra);
     }
     
     
