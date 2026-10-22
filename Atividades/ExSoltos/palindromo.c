@@ -1,32 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    int i;
+    int i,j, palindromo;
     char palavra[30];
     scanf("%s", palavra);
     printf("Palavra: %s", palavra);
     printf("\n");
-    for(i=0; i<30 && palavra[i] !='\0'; i++){
+    for(i=0; i<30 && palavra[i] !='\0'; i++);
+    for(j=i-1, i=0; i<j; i++, j--){
+        if(palavra[i] == palavra[j]) palindromo =1;
+        else palindromo = 0;
     }
-    int tamanho = i;
-    printf("Tamanho da palavra é: %d\n", tamanho);
-
-    int pa_lindromo = 1;
-    for(i = 0; i < tamanho / 2; i++) {
-        if(palavra[i] != palavra[tamanho - 1 - i]) {
-            pa_lindromo = 0; 
-            break;  
-        }
-    }
-
-    if (pa_lindromo == 1){
-        printf("\nA palavra  %s  é um polindromo", palavra);
-    }
-    else{
-        printf("\nA palavra   %s   não é um polindromo", palavra);
-    }
-    
-    
-    
+    if (palindromo)printf("É um palindromo");
+    else printf("Não é um palindromo");
     return 0;
+
 }
